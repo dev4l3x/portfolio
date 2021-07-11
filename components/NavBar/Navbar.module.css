@@ -7,7 +7,7 @@
 }
 
 .hamburguer-menu {
-  @apply max-w-min place-self-center sm:hidden float-right ml-auto mr-0 col-start-2 col-end-3 row-start-1 text-xl;
+  @apply max-w-min place-self-center lg:hidden float-right ml-auto mr-0 col-start-2 col-end-3 row-start-1 text-xl;
 }
 
 .mobile-menu-enter {

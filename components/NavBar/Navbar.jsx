@@ -7,7 +7,7 @@ import { CSSTransition } from "react-transition-group";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const SM_SIZE = 640;
+  const LG_SIZE = 1024;
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <nav className="p-10 grid grid-cols-2">
-      <div className="mx-auto col-start-1 col-end-3 row-start-1 sm:col-start-1 sm:col-end-2">
+      <div className="mx-auto col-start-1 col-end-3 row-start-1 lg:col-start-1 lg:col-end-2">
         <h1 className="inline font-bold text-2xl">ALEX SÁNCHEZ</h1>
       </div>
       <button
@@ -29,7 +29,7 @@ function Navbar() {
       >
         <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
       </button>
-      {width <= SM_SIZE ? (
+      {width < LG_SIZE ? (
         <CSSTransition
           in={isOpen}
           timeout={200}

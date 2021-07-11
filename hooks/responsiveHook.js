@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 export const SIZES = Object.freeze({
   SM: 640,
+  MD: 768,
+  LG: 1025,
 });
 
 function useResponsive() {
