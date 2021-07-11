@@ -19,8 +19,7 @@ const Home = ({ className }) => {
         <h1 className="text-2xl sm:text-3xl">
           Hey there! Welcome to my web.
           <br />
-          I'm a <span className="highlight">software engineer</span> who
-          <br />
+          I'm a <span className="highlight">software engineer</span> who{" "}
           <span className="highlight">loves</span> what he does
         </h1>
         <p className="text-justify mt-5 text-gray-500">
