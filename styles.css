@@ -5,6 +5,7 @@
 
 :root {
   --dark: #1a1a2e;
+  --darksecondary: #2a2a3e;
   --bluedark: #16213e;
   --red: #e94560;
 }
@@ -45,7 +46,7 @@ body {
 }
 
 .section {
-  @apply py-20 px-40;
+  @apply p-10 lg:py-20 lg:px-40;
 }
 
 .title {

@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../components/NavBar/Navbar";
 import Home from "../modules/Home/Home";
 import About from "../modules/About/About";
+import Experience from "../modules/Experience/Experience";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <Navbar />
       <Home className="mt-1 sm:mt-10" />
       <About />
+      <Experience />
     </React.Fragment>
   );
 }
