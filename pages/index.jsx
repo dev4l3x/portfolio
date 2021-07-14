@@ -4,6 +4,7 @@ import Navbar from "../components/NavBar/Navbar";
 import Home from "../modules/Home/Home";
 import About from "../modules/About/About";
 import Experience from "../modules/Experience/Experience";
+import Skills from "../modules/Skills/Skills";
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <Home className="mt-1 sm:mt-10" />
       <About />
       <Experience />
+      <Skills />
     </React.Fragment>
   );
 }
