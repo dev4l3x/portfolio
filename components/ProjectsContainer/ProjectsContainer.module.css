@@ -1,0 +1,13 @@
+.projects-container {
+  @apply rounded-xl;
+  background-color: var(--darksecondary);
+}
+
+.project-separator {
+  @apply h-0.5 bg-gray-700 my-6;
+}
+
+.github-button:hover > .github-icon {
+  @apply opacity-100;
+  transition: opacity 200ms;
+}

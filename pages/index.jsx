@@ -5,6 +5,7 @@ import Home from "../modules/Home/Home";
 import About from "../modules/About/About";
 import Experience from "../modules/Experience/Experience";
 import Skills from "../modules/Skills/Skills";
+import Projects from "../modules/Projects/Projects";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <About />
       <Experience />
       <Skills />
+      <Projects />
     </React.Fragment>
   );
 }
