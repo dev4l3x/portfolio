@@ -1,5 +1,5 @@
 .link {
-  @apply inline text-xs lg:text-sm mr-12 p-0 text-center;
+  @apply inline text-xs lg:text-sm mr-12 p-0 text-center cursor-pointer;
 }
 
 .link-mobile {

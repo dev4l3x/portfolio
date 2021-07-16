@@ -23,7 +23,7 @@ const Skills = (props) => {
     <section
       className="alternative-section"
       style={{ padding: "0 !important" }}
-      id="triangle-background"
+      id={props.id}
     >
       <div className="grid grid-cols-2 grid-rows-1">
         <canvas

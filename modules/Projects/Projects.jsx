@@ -2,7 +2,7 @@ import ProjectsContainer from "../../components/ProjectsContainer/ProjectsContai
 
 const Projects = (props) => {
   return (
-    <section className="section">
+    <section className="section" id={props.id}>
       <h1 className="title mb-5">projects()</h1>
       <ProjectsContainer>
         <ProjectsContainer.Project></ProjectsContainer.Project>

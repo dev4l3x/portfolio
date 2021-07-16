@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
-function Navbar() {
+function Navbar({ onClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const LG_SIZE = 1024;
@@ -43,18 +43,46 @@ function Navbar() {
           }}
         >
           <ul className="float-right col-span-2 mt-5 hidden">
-            <li className={styles["link-mobile"]}>home()</li>
-            <li className={styles["link-mobile"]}>experience()</li>
-            <li className={styles["link-mobile"]}>projects()</li>
-            <li className={styles["link-mobile"]}>linkedin()</li>
+            <li
+              className={styles["link-mobile"]}
+              onClick={() => onClick("experience")}
+            >
+              experience()
+            </li>
+            <li
+              className={styles["link-mobile"]}
+              onClick={() => onClick("skills")}
+            >
+              skills()
+            </li>
+            <li
+              className={styles["link-mobile"]}
+              onClick={() => onClick("projects")}
+            >
+              projects()
+            </li>
+            <li
+              className={styles["link-mobile"]}
+              onClick={() => onClick("linkedin")}
+            >
+              linkedin()
+            </li>
           </ul>
         </CSSTransition>
       ) : (
         <ul className="float-right sm:ml-10 mx-auto col-span-1 inline">
-          <li className={styles.link}>home()</li>
-          <li className={styles.link}>experience()</li>
-          <li className={styles.link}>projects()</li>
-          <li className={styles.link}>linkedin()</li>
+          <li className={styles.link} onClick={() => onClick("experience")}>
+            experience()
+          </li>
+          <li className={styles.link} onClick={() => onClick("skills")}>
+            skills()
+          </li>
+          <li className={styles.link} onClick={() => onClick("projects")}>
+            projects()
+          </li>
+          <li className={styles.link} onClick={() => onClick("linkedin")}>
+            linkedin()
+          </li>
         </ul>
       )}
     </nav>

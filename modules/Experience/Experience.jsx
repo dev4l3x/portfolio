@@ -6,7 +6,7 @@ import DownLine from "../../components/DownLine";
 
 const Experience = (props) => {
   return (
-    <section className="section">
+    <section className="section" id={props.id}>
       <h1 className="title mb-10">experience()</h1>
       <div className="grid" style={{ gridTemplateColumns: "36px auto 36px" }}>
         <YearLine
