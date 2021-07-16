@@ -1,0 +1,4 @@
+.projects-container {
+  @apply rounded-xl p-5;
+  background-color: var(--darksecondary);
+}

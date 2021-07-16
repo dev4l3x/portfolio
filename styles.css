@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+:root {
+  --dark: #1a1a2e;
+  --darksecondary: #2a2a3e;
+  --bluedark: #16213e;
+  --red: #e94560;
+}
+
+body {
+  @apply text-white;
+  font-family: "Noto Sans", sans-serif;
+  background: #1a1a2e;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.highlight {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.alternative-section {
+  background-color: var(--bluedark);
+  min-width: 100%;
+  @apply p-10 lg:py-20 lg:px-40;
+}
+
+.section {
+  @apply p-10 lg:py-20 lg:px-40;
+}
+
+.title {
+  @apply text-2xl font-bold;
+}

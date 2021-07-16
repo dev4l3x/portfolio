@@ -1,0 +1,16 @@
+.container {
+  background-color: var(--darksecondary);
+  @apply rounded-xl p-5;
+}
+
+.position {
+  color: var(--red);
+}
+
+.company {
+  @apply text-xs;
+}
+
+.description {
+  @apply text-sm mt-3 text-gray-400;
+}
