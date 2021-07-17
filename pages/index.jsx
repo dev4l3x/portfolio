@@ -8,6 +8,7 @@ import Skills from "../modules/Skills/Skills";
 import Projects from "../modules/Projects/Projects";
 import Contact from "../modules/Contact/Contact";
 import file from "../resources/data.yml";
+import { Helmet } from "react-helmet";
 
 function HomePage({ experience, projects, skills }) {
   const menu_actions = {
@@ -42,6 +43,10 @@ function HomePage({ experience, projects, skills }) {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Alex Sánchez Iglesias</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"></link>
+      </Helmet>
       <Navbar onClick={handleNavigationClicked} />
       <Home className="mt-1 sm:mt-10" />
       <About />
