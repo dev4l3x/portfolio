@@ -7,12 +7,9 @@ import Experience from "../modules/Experience/Experience";
 import Skills from "../modules/Skills/Skills";
 import Projects from "../modules/Projects/Projects";
 import Contact from "../modules/Contact/Contact";
+import file from "../resources/data.yml";
 
-function HomePage() {
-  const projects = useRef();
-  const experience = useRef();
-  const skill = useRef();
-
+function HomePage({ experience, projects, skills }) {
   const menu_actions = {
     experience: () => {
       const el = document.getElementById("experience");
@@ -48,12 +45,38 @@ function HomePage() {
       <Navbar onClick={handleNavigationClicked} />
       <Home className="mt-1 sm:mt-10" />
       <About />
-      <Experience id="experience" />
-      <Skills id="skill" />
-      <Projects id="projects" />
+      <Experience id="experience" experiences={experience} />
+      <Skills id="skill" skills={skills} />
+      <Projects id="projects" projects={projects} />
       <Contact />
     </React.Fragment>
   );
+}
+
+export async function getStaticProps() {
+  // we can read files syncronous because this gets executed at build time
+
+  const projects = file.projects;
+  projects.forEach((project) => {
+    project.techs = project.techs.map((tech) => {
+      const skill_info = file.skills.find((skill) =>
+        skill.techs.includes(tech)
+      );
+      const color = (skill_info && skill_info.color) || "#FFF2AC";
+      return {
+        color: color,
+        name: tech,
+      };
+    });
+  });
+
+  return {
+    props: {
+      experience: file.experience,
+      skills: file.skills,
+      projects,
+    },
+  };
 }
 
 export default HomePage;

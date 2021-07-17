@@ -20,18 +20,18 @@ const ProjectsContainer = (props) => {
   );
 };
 
-const Project = (props) => {
+const Project = ({ title, description, techs, repo }) => {
   return (
     <div className="grid p-5" style={{ gridTemplateColumns: "auto 100px" }}>
       <div className="flex flex-col gap-4 col-start-1">
         <h2 className="text-lg" style={{ color: "var(--red)" }}>
-          MySus
+          {title}
         </h2>
-        <p className="text-sm my-1">
-          Lorem ipsum dolor sit amet, consectetur adip
-        </p>
-        <div className="flex">
-          <Skill text="react.js" color="blue"></Skill>
+        <p className="text-sm my-1">{description}</p>
+        <div className="flex flex-wrap gap-4">
+          {techs.map((tech) => {
+            return <Skill text={tech.name} color={tech.color}></Skill>;
+          })}
         </div>
       </div>
       <a
@@ -40,7 +40,7 @@ const Project = (props) => {
           styles["github-button"]
         }
         style={{ backgroundColor: "var(--dark)" }}
-        href="https://github.com/dev4l3x"
+        href={repo}
         target="_blank"
       >
         <FontAwesomeIcon

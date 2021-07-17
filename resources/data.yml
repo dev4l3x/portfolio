@@ -1,0 +1,71 @@
+experience:
+  - title: "Bachelor's degree - Computer Science"
+    place: "University of Vigo"
+    description: "Degree on computer science where I was able to learn a lot of things and improve my technical skills, also It helped me
+    a lot with my soft skills too. During this period I was able to learn about data structures, algorithms, AI, security, servers as well as web technologies
+    and frameworks that gave the freedom to start to explore more deeper this subjects.
+    One of the most valuable lessons that I've learnt is to always keep learning."
+    year: 2016
+  - title: "Fullstack Developer"
+    place: "BALIDEA"
+    description: "This was my first touch of contact with the professional enviroment. Here I was able to apply all the knowledge that I've been
+    learning and practicing in my side projects.
+    During this period I started to work developing mobile applications with Xamarin Forms and C# for a private company. After, I worked with web technologies
+    using frameworks like MVC.NET and EntityFramework for the backend and knockout.js, react.js and durandal for the frontend part. After a couple of big projects
+    with theese technologies I made a switch to the Java stack. Here I was working with well knoledged java technologies like Java EE and Spring."
+    year: 2019
+  - title: "Backend Engineer"
+    place: "Bizaway"
+    description: "In this company I'm able to develop backend applications were the ability to be scalable
+    it's critical. I can experiment with new technologies like redis, elastic search, mongodb, express, apollo graphql and so on...
+     Right now I'm working mostly with node.js, express.js and apollo graphql as well as testing frameworks like jest."
+    year: 2021
+skills:
+  - title: "FRONTEND"
+    techs:
+      - "react.js"
+      - "next.js"
+      - "tailwind"
+      - "xamarin forms"
+      - "uikit"
+    color: "#ACFAFF"
+  - title: "BACKEND"
+    techs:
+      - "node.js"
+      - "express"
+      - "graphql"
+      - "mysql"
+      - "mongodb"
+      - "postgresql"
+      - "redis"
+      - "elastic search"
+      - "docker"
+      - "rest"
+      - "oauth"
+      - "fastify"
+      - "rabbitmq"
+    color: "#ACFFAF"
+  - title: "SOFTWARE ENGINEERING"
+    techs:
+      - "design patterns"
+      - "hexagonal architecture"
+      - "clean code"
+      - "best practices"
+      - "microservices"
+      - "scalability"
+      - "continuous integration"
+      - "continuous deployment"
+    color: "#FFACAC"
+  - title: "OTHERS"
+    techs:
+      - "jest"
+    color: "#D1ACFF"
+projects:
+  - title: "Portfolio (this website)"
+    description: "A next.js based project to showcase my skills, experience and projects in one place."
+    url: "https://github.com/dev4l3x/portfolio"
+    techs:
+      - "react.js"
+      - "next.js"
+      - "tailwind"
+      - "continuous deployment"

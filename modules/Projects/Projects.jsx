@@ -1,12 +1,20 @@
 import ProjectsContainer from "../../components/ProjectsContainer/ProjectsContainer";
 
-const Projects = (props) => {
+const Projects = ({ id, projects }) => {
   return (
-    <section className="section" id={props.id}>
+    <section className="section" id={id}>
       <h1 className="title mb-5">projects()</h1>
       <ProjectsContainer>
-        <ProjectsContainer.Project></ProjectsContainer.Project>
-        <ProjectsContainer.Project></ProjectsContainer.Project>
+        {projects.map((project) => {
+          return (
+            <ProjectsContainer.Project
+              title={project.title}
+              description={project.description}
+              techs={project.techs}
+              repo={project.url}
+            />
+          );
+        })}
       </ProjectsContainer>
     </section>
   );
