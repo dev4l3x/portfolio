@@ -64,3 +64,13 @@ projects:
       - "next.js"
       - "tailwind"
       - "continuous deployment"
+  - title: "Booknotes"
+    description: "An API that allows you to register notes about books you're reading. The app uses the domain driven design convention and a hexagonal architecture.
+    In order to connect the controllers with the domain services for the hexagonal architecture I've used the CQRS (Command Query Responsibility Segregation) pattern. The api 
+    is implemented using express.js framwork along with mongodb for data persistence."
+    url: "https://github.com/dev4l3x/BookNotes"
+    techs:
+      - "express"
+      - "mongodb"
+      - "hexagonal architecture"
+      - "design patterns"
