@@ -13,7 +13,12 @@ experience:
   - title: "Backend Engineer"
     place: "Bizaway"
     description: "In this company, I develop backend applications where the ability to be scalable is critical. I can play with new technologies like Redis, elastic search, MongoDB, express, apollo graphql, and so on...
-     Right now I'm working mostly with node.js, express.js, and apollo graphql as well as testing frameworks like jest."
+     I was working mostly with node.js, express.js, and apollo graphql as well as testing frameworks like jest."
+    year: 2021
+  - title: "Backend Engineer"
+    place: "Inditex"
+    description: "Working in a high traffic microservice for Zara. I'm working with Java technologies like Spring Boot as well as many others like NoSQL databases. High focusing on writting quality code using DDD, best practices
+    and design patterns."
     year: 2021
 skills:
   - title: "FRONTEND"
